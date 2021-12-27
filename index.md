@@ -5,9 +5,10 @@ Stegofier is a java console application to encode and decode information to and 
 
 
 
-### Usage: stegofier [options] [command] [command options]
+### Usage: 
   
 ```markdown
+# stegofier [options] [command] [command options]
 
 # Commands:
 
