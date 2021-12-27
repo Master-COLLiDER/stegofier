@@ -7,7 +7,7 @@ Stegofier is a java console application to encode and decode information to and 
 
 ## Usage: stegofier [options] [command] [command options]
   
-  '''
+```markdown
   ## Commands:
    ### encode
       Usage: encode [options]
@@ -61,7 +61,7 @@ Stegofier is a java console application to encode and decode information to and 
           -h, --help
             Displays help information
 
-  '''
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
