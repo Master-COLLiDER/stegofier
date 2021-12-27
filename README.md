@@ -59,7 +59,6 @@ Stegofier is a java console application to encode and decode information to and 
             Absolute path to directory which will store the generated Keys
           -h, --help
             Displays help information
-*/
 
 
 ## Contributing
