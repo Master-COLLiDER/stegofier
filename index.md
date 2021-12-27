@@ -75,7 +75,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-This project is subject to the terms and conditions defined in the file '[LICENSE](https://github.com/Master-COLLiDER/stegofier/LICENSE)' which is part of this source code package.
+This project is subject to the terms and conditions defined in the file '[LICENSE](https://github.com/Master-COLLiDER/stegofier/blob/master/LICENSE)' which is part of this source code package.
 
 ### Support or Contact
 
