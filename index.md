@@ -1,37 +1,75 @@
-## Welcome to GitHub Pages
+## Welcome to Stegofier 
 
-You can use the [editor on GitHub](https://github.com/Master-COLLiDER/stegofier/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Stegofier is a java console application to encode and decode information to and from an image of type PNG.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Usage: stegofier [options] [command] [command options]
+  
+  ## Commands:
+   ### encode
+      Usage: encode [options]
+        Options:
+          -cc, --color-channel, 
+            Color Channels  (1 - 7) - R: 1, G: 2, B :3, RG: 4, GB: 5, RB: 6, 
+            RGB: 7
+            Default: 1
+        * -c, --cover
+            Absolute path to the Cover Image which will store data (Must be 
+            PNG or BMP).
+          -ET, --encryption-type
+            Encryption type (1 - 3): 1 - AES256, 2 - TripleDES, 3 - RSA
+            Default: 0
+          -h, --help
+            Displays help information
+          -m, --message
+            Message to be stored
+          -lsb, --no-of-lsb
+            Number of least significant bits: ranges 0 - 7
+            Default: 0
+          -o, --output
+            File name for the output Image.
+          -p, --password
+            Password for encryption
+          -pbk, --public-key
+            File name for the public key (Required during encryption if -ET=3 
+            (RSA) is selected)
 
-# Header 1
-## Header 2
-### Header 3
+   ### decode
+      Usage: decode [options]
+        Options:
+        * -c, --cover
+            Absolute path to the Cover Image which stores the information 
+            (Must be PNG or BMP).
+          -h, --help
+            Displays help information
+          -o, --output
+            File name for the output extracted data
+          -p, --password
+            Password for decryption
+          -pvtk, --private-key
+            File name for the private key (Required during decryption if -ET = 
+            3 (RSA) was used as encryption algorithm)
 
-- Bulleted
-- List
+   ### generate
+      Usage: generate [options]
+        Options:
+        * -d, --destination_directory
+            Absolute path to directory which will store the generated Keys
+          -h, --help
+            Displays help information
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Please make sure to update tests as appropriate.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Master-COLLiDER/stegofier/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## License
+This project is subject to the terms and conditions defined in the file '[LICENSE](/LICENSE)' which is part of this source code package.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with stegofier? Post in discussion.
